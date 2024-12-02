@@ -1,0 +1,82 @@
+/* Reset some default browser styles */
+body, h1, p, nav, #bottombar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography and body styling */
+body {
+    font-family: 'Literata', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #212121;
+}
+
+/* Navbar styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #212121;
+    border-bottom: 2px solid #fff;
+    z-index: 1000;
+}
+
+nav a {
+    font-family: inherit;
+    font-size: 1em;
+    color: #fff;
+    margin: 0 32px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px hidden;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #424242;
+}
+
+nav a#about-link {
+    margin-left: auto;
+}
+
+/* Content styling */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    min-width: 600px;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Bottom bar styling */
+#bottombar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 80px;
+    background-color: #424242;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#bottombar heart-icon {
+    height: 32px;
+}
